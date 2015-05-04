@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GetPassword</string>
+    <string name="main_do">Generate secure password</string>
+    <string name="main_newpwd">Your new password will be shown here.</string>
+    <string name="main_doubletap">Double tap on password to copy</string>
+    <string name="main_length">Length</string>
+    <string name="main_incl_symbs">Include Symbols</string>
+    <string name="main_incl_symbs_desc">\@#$%</string>
+    <string name="main_incl_numbs">Include Numbers</string>
+    <string name="main_incl_numbs_desc">123456</string>
+    <string name="main_incl_lowerchars">Lowercase Characters</string>
+    <string name="main_incl_lowerchars_desc">abcdefgh</string>
+    <string name="main_incl_upperchars">Uppercase Characters</string>
+    <string name="main_incl_upperchars_desc">ABCDEFGH</string>
+    <string name="main_excl_simchars">Exclude Similar Characters</string>
+    <string name="main_excl_ambchars">Exclude Ambiguous Characters</string>
+    <string name="main_autocopy">Auto-Copy</string>
+    <string name="main_autocopy_desc">copy after generation</string>
+
+    <string name="err_nothing_selected">Please select at least one item.</string>
+    <string name="err_was_copied">Your new password is copied</string>
+    <string name="err_cant_copy">It cannot be copied</string>
+
+</resources>

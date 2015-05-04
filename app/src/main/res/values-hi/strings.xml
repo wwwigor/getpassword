@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">GetPassword</string>
+    <string name="main_do">सुरक्षित पासवर्ड जेनरेट करें</string>
+    <string name="main_newpwd">आपका नया पासवर्ड यहाँ प्रदर्शित किया जाएगा।</string>
+    <string name="main_doubletap">इसे कॉपी करने के लिए पासवर्ड पर दो बार क्लिक करें</string>
+    <string name="main_length">लंबाई</string>
+    <string name="main_incl_symbs">विशेष वर्ण</string>
+    <string name="main_incl_symbs_desc">\@#$%</string>
+    <string name="main_incl_numbs">नंबर</string>
+    <string name="main_incl_numbs_desc">123456</string>
+    <string name="main_incl_lowerchars">छोटे अक्षर</string>
+    <string name="main_incl_lowerchars_desc">abcdefgh</string>
+    <string name="main_incl_upperchars">अप्पर केस लेटर्स</string>
+    <string name="main_incl_upperchars_desc">ABCDEFGH</string>
+    <string name="main_excl_simchars">इसी तरह के अक्षरों से बचें</string>
+    <string name="main_excl_ambchars">Multivalue अक्षरों से बचें</string>
+    <string name="main_autocopy">जनरेट करने के बाद कॉपी करें</string>
+    <string name="main_autocopy_desc"/>
+
+    <string name="err_nothing_selected">कम से कम एक विकल्प चुनें</string>
+    <string name="err_was_copied">आपके नये पासवर्ड को कॉपी किया गया है</string>
+    <string name="err_cant_copy">यह कॉपी नहीं किया जा सकता है</string>
+
+</resources>

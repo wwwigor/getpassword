@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/smartphone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="@string/main_do"
+        android:id="@+id/pwdgen_do"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:id="@+id/pwdgen_passwd"
+        android:textSize="12dp"
+        android:textColor="@color/green"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pwdgen_do"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:editable="false"
+        android:text="@string/main_newpwd"
+        android:fontFamily="Courier New"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/main_doubletap"
+        android:id="@+id/pwdgen_double_tap"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/pwdgen_passwd"
+        android:layout_alignRight="@+id/pwdgen_passwd"
+        android:layout_alignEnd="@+id/pwdgen_passwd"
+        android:layout_alignLeft="@+id/pwdgen_passwd"
+        android:layout_alignStart="@+id/pwdgen_passwd"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwdgen_sett_scroll"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pwdgen_double_tap"
+        android:layout_above="@+id/pwdget_footer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="0dp"
+            android:id="@+id/pwdgen_sett_view">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/pwdgen_len_view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_length"
+                    android:id="@+id/pwdgen_len_text"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:id="@+id/pwdgen_len"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pwdgen_len_text"
+                    android:layout_toEndOf="@+id/pwdgen_len_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginTop="3dp" />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pwdgen_len_bar"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pwdgen_len"
+                    android:layout_toEndOf="@+id/pwdgen_len"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_incl_symbs"
+                android:id="@+id/chk_incl_symbols"
+                android:textColor="@color/black"
+                android:layout_below="@+id/pwdgen_len_view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/main_incl_symbs_desc"
+                android:id="@+id/chk_incl_symbols_desc"
+                android:layout_below="@+id/pwdgen_len_view"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/gray"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_incl_numbs"
+                android:id="@+id/chk_incl_numbers"
+                android:textColor="@color/black"
+                android:layout_below="@+id/chk_incl_symbols"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/main_incl_numbs_desc"
+                android:id="@+id/chk_incl_numbers_desc"
+                android:layout_alignTop="@+id/chk_incl_numbers"
+                android:layout_alignRight="@+id/chk_incl_symbols_desc"
+                android:layout_alignEnd="@+id/chk_incl_symbols_desc"
+                android:textColor="@color/gray"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_incl_lowerchars"
+                android:id="@+id/chk_incl_lowerchars"
+                android:textColor="@color/black"
+                android:layout_below="@+id/chk_incl_numbers"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/main_incl_lowerchars_desc"
+                android:id="@+id/chk_incl_lowerchars_desc"
+                android:layout_alignTop="@+id/chk_incl_lowerchars"
+                android:textColor="@color/gray"
+                android:layout_alignRight="@+id/chk_incl_numbers_desc"
+                android:layout_alignEnd="@+id/chk_incl_numbers_desc"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_incl_upperchars"
+                android:id="@+id/chk_incl_upperchars"
+                android:layout_below="@+id/chk_incl_lowerchars"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/main_incl_upperchars_desc"
+                android:id="@+id/chk_incl_upperchars_desc"
+                android:textColor="@color/gray"
+                android:layout_alignTop="@+id/chk_incl_upperchars"
+                android:layout_alignRight="@+id/chk_incl_lowerchars_desc"
+                android:layout_alignEnd="@+id/chk_incl_lowerchars_desc"
+                android:layout_marginTop="8dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_excl_simchars"
+                android:id="@+id/chk_excl_simchars"
+                android:layout_below="@+id/chk_incl_upperchars"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_excl_ambchars"
+                android:id="@+id/chk_excl_ambchars"
+                android:layout_below="@+id/chk_excl_simchars"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_autocopy"
+                android:id="@+id/chk_autocopy"
+                android:layout_below="@+id/chk_excl_ambchars"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/main_autocopy_desc"
+                android:id="@+id/chk_autocopy_desc"
+                android:layout_alignTop="@+id/chk_autocopy"
+                android:textColor="@color/gray"
+                android:layout_marginTop="8dp"
+                android:layout_alignRight="@+id/chk_incl_upperchars_desc" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pwdget_footer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="http://getpassword.org"
+            android:id="@+id/pwdgen_url"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:linksClickable="true"
+            android:autoLink="web" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

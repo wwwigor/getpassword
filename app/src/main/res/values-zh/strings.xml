@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">获取密码</string>
+    <string name="main_do">生成安全的密码</string>
+    <string name="main_newpwd">您的新密码将在这里显示。</string>
+    <string name="main_doubletap">点击两次密码，以复制该密码</string>
+    <string name="main_length">长度</string>
+    <string name="main_incl_symbs">特殊字符</string>
+    <string name="main_incl_symbs_desc">\@#$%</string>
+    <string name="main_incl_numbs">数字</string>
+    <string name="main_incl_numbs_desc">123456</string>
+    <string name="main_incl_lowerchars">小写字母</string>
+    <string name="main_incl_lowerchars_desc">abcdefgh</string>
+    <string name="main_incl_upperchars">大写字母</string>
+    <string name="main_incl_upperchars_desc">ABCDEFGH</string>
+    <string name="main_excl_simchars">避免类似的字符</string>
+    <string name="main_excl_ambchars">避免多值字符</string>
+    <string name="main_autocopy">生成后的副本</string>
+    <string name="main_autocopy_desc"/>
+
+    <string name="err_nothing_selected">至少选择一个选项</string>
+    <string name="err_was_copied">以复制您的新密码</string>
+    <string name="err_cant_copy">无法复制</string>
+
+</resources>

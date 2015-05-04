@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+
+    <string name="app_name">GetPassword</string>
+    <string name="main_do">보안 비밀번호 생성하기</string>
+    <string name="main_newpwd">새 비밀번호가 여기에 표시됩니다.</string>
+    <string name="main_doubletap">복사하려면 비밀번호를 두번 누르십시오.</string>
+    <string name="main_length">길이</string>
+    <string name="main_incl_symbs">기호 포함</string>
+    <string name="main_incl_symbs_desc">\@#$%</string>
+    <string name="main_incl_numbs">숫자 포함</string>
+    <string name="main_incl_numbs_desc">123456</string>
+    <string name="main_incl_lowerchars">소문자</string>
+    <string name="main_incl_lowerchars_desc">abcdefgh</string>
+    <string name="main_incl_upperchars">대문자</string>
+    <string name="main_incl_upperchars_desc">ABCDEFGH</string>
+    <string name="main_excl_simchars">비슷한 문자 제외</string>
+    <string name="main_excl_ambchars">모호한 문자 제외</string>
+    <string name="main_autocopy">자동 복사</string>
+    <string name="main_autocopy_desc">생성 후 복사</string>
+
+    <string name="err_nothing_selected">하나 이상의 항목을 선택하십시오.</string>
+    <string name="err_was_copied">새 비밀번호가 복사되었습니다.</string>
+    <string name="err_cant_copy">복사할 수 없습니다.</string>
+
+</resources>
